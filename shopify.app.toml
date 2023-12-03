@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "image-skincare-ed-dev"
+client_id = "726f1c033d0df3fdf18e500b7e60ede6"
+application_url = "https://yearly-progressive-harrison-obligation.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_discounts"
+
+[auth]
+redirect_urls = [
+  "https://yearly-progressive-harrison-obligation.trycloudflare.com/auth/callback",
+  "https://yearly-progressive-harrison-obligation.trycloudflare.com/auth/shopify/callback",
+  "https://yearly-progressive-harrison-obligation.trycloudflare.com/api/auth/callback",
+  "https://yearly-progressive-harrison-obligation.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "imageskincare-ed-dev.myshopify.com"
